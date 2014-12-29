@@ -23,9 +23,9 @@
         <div class="container">
 
       <form class="form-signin" role="form">
-        <h2 class="form-signin-heading">请登录微信管理后台</h2>
-        <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
-        <input type="password" class="form-control" placeholder="Password" required="">
+        <h2 class="form-signin-heading text-center">微信管理后台</h2>
+        <input type="email" class="form-control" placeholder="邮箱" required="" autofocus="">
+        <input type="password" class="form-control" placeholder="密码" required="">
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> 记住我
