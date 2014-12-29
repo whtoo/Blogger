@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  *
@@ -19,13 +20,28 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("welcome")
 public class IndexAction {
+    
      @RequestMapping(method = RequestMethod.GET)
      public String welcome(Model model) {
-        String flag = "welcome";
+        String flag = "login/welcome";
         Date date = new Date();
         model.addAttribute("date",date );
         return flag;
      }
      
+    /**
+     *
+     * @param username
+     * @param username
+     * @param model
+     * @return
+     */
+    @RequestMapping(value="/login",method = RequestMethod.POST)
+     public String login(@RequestParam String useremail,@RequestParam String pwd,Model model) {
+        String flag = "index";
+        System.out.println("email "+useremail);
+        System.out.println("pwd "+pwd);
+        return flag;
+     }
      
 }

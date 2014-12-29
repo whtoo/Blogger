@@ -22,10 +22,10 @@
     <body>
         <div class="container">
 
-      <form class="form-signin" role="form">
+            <form class="form-signin" role="form" action="<%=ctx%>/welcome/login" method="POST">
         <h2 class="form-signin-heading">请登录微信管理后台</h2>
-        <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
-        <input type="password" class="form-control" placeholder="Password" required="">
+        <input type="email" name="useremail" class="form-control" placeholder="Email address" required="" autofocus="">
+        <input type="password" name="pwd" class="form-control" placeholder="Password" required="">
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> 记住我
