@@ -34,8 +34,8 @@ public class IndexAction {
      
     /**
      *
-     * @param username
-     * @param username
+     * @param useremail
+     * @param pwd
      * @param model
      * @return
      */
@@ -46,5 +46,6 @@ public class IndexAction {
         LOG.info("pwd "+pwd);
         return flag;
      }
+     
      
 }
