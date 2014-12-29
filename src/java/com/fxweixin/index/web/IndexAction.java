@@ -7,6 +7,8 @@
 package com.fxweixin.index.web;
 
 import java.util.Date;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequestMapping("welcome")
 public class IndexAction {
+    private final static Logger LOG = LoggerFactory.getLogger(IndexAction.class);
     
      @RequestMapping(method = RequestMethod.GET)
      public String welcome(Model model) {
@@ -39,8 +42,8 @@ public class IndexAction {
     @RequestMapping(value="/login",method = RequestMethod.POST)
      public String login(@RequestParam String useremail,@RequestParam String pwd,Model model) {
         String flag = "index";
-        System.out.println("email "+useremail);
-        System.out.println("pwd "+pwd);
+        LOG.info("email "+useremail);
+        LOG.info("pwd "+pwd);
         return flag;
      }
      

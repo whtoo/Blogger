@@ -7,6 +7,7 @@
     String ctx = request.getContextPath();
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,7 +23,7 @@
     <body>
         <div class="container">
 
-            <form class="form-signin" role="form" action="<%=ctx%>/welcome/login" method="POST">
+            <form class="form-signin" role="form" action="<c:url value="/welcome/login" />" method="POST">
         <h2 class="form-signin-heading">请登录微信管理后台</h2>
         <input type="email" name="useremail" class="form-control" placeholder="Email address" required="" autofocus="">
         <input type="password" name="pwd" class="form-control" placeholder="Password" required="">
