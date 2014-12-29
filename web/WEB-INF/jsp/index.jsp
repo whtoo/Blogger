@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Welcome to Spring Web MVC project</title>
+        <title>管理平台</title>
         <script src="<%=ctx%>/js/jquery/jquery2-min.js" type="text/javascript"></script>
         <link href="<%=ctx%>/bootstrap3/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="<%=ctx%>/bootstrap3/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
