@@ -44,8 +44,16 @@ public class IndexAction {
         String flag = "index/index";
         LOG.info("email "+useremail);
         LOG.info("pwd "+pwd);
+        if(!"whtoo@qq.com".equals(useremail)){
+            flag = "redirect:/welcome/register";
+        }
         return flag;
      }
-     
+     @RequestMapping(value="/register",method = RequestMethod.GET)
+     public String register(){
+          String flag = "login/register";
+          
+          return flag;
+     }
      
 }
