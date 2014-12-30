@@ -41,7 +41,7 @@ public class IndexAction {
      */
     @RequestMapping(value="/login",method = RequestMethod.POST)
      public String login(@RequestParam String useremail,@RequestParam String pwd,Model model) {
-        String flag = "index";
+        String flag = "index/index";
         LOG.info("email "+useremail);
         LOG.info("pwd "+pwd);
         return flag;
