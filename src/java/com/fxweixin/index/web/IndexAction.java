@@ -26,7 +26,7 @@ public class IndexAction {
     
      @RequestMapping(method = RequestMethod.GET)
      public String welcome(Model model) {
-        String flag = "login/welcome";
+        String flag = "index/index";
         Date date = new Date();
         model.addAttribute("date",date );
         return flag;
