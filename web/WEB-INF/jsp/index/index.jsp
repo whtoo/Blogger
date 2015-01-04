@@ -43,7 +43,71 @@
     </nav>
 
     <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-md-3">
+                <span>商品分类</span>
+            </div>
+            <div class="col-xs-3 col-md-3">
+                <span>我的订单</span>
+            </div>
+            <div class="col-xs-3 col-md-3">
+               <span>购物车</span>
+            </div>
+            <div class="col-xs-3 col-md-3">
+                <span>个人中心</span>
+            </div>
+        </div>
         
+        <div class="row">
+            <div class="col-xs-6 col-md-6">
+                
+                <a href="#" class="thumbnail">
+                <img src="<%=ctx%>/images/2015010418/iphone6.jpg" class="img-responsive" alt="iPhone 6"/>
+                </a>
+                <div class="row">
+                    $1000
+                </div>
+                 <div class="row">
+                    iPHone6
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-6">
+                
+                 <a href="#" class="thumbnail">
+                <img src="<%=ctx%>/images/2015010418/cake.jpg"  class="img-responsive" alt=""/>
+                 </a>
+                 <div class="row">
+                    $1000
+                </div>
+                 <div class="row">
+                    iPHone6
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-6">
+                
+                 <a href="#" class="thumbnail">
+                <img src="<%=ctx%>/images/2015010418/route.jpg"  class="img-responsive" alt=""/>
+                 </a>
+                 <div class="row">
+                    $1000
+                </div>
+                 <div class="row">
+                    iPHone6
+                </div>
+            </div>
+              <div class="col-xs-6 col-md-6 ">
+                  
+                  <a href="#" class="thumbnail">
+                  <img src="<%=ctx%>/images/2015010418/tv.jpg"   class="img-responsive" alt=""/>
+                  </a>
+                 <div class="row">
+                    $1000
+                </div>
+                 <div class="row">
+                    iPHone6
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
