@@ -7,7 +7,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>电商首页</title>
         <script src="<%=ctx%>/js/jquery/jquery2-min.js" type="text/javascript"></script>
         <link href="<%=ctx%>/bootstrap3/css/bootstrap.css" rel="stylesheet" type="text/css"/>
@@ -17,9 +17,34 @@
     </head>
 
     <body>
-        <div class="container">
-           
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="col-xs-8 col-md-8">
+                    <a class="navbar-brand" href="#">
+                        <span>聚客商--正品低价</span>
+                    </a>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            广东
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">广东</a></li>
+                            <li><a href="#">江苏</a></li>
+                            <li><a href="#">浙江</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+    </nav>
+
+    <div class="container">
+        
+    </div>
+</body>
 </html>
 
