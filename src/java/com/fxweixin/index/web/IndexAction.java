@@ -26,7 +26,7 @@ public class IndexAction {
     
      @RequestMapping(method = RequestMethod.GET)
      public String welcome(Model model) {
-        String flag = "index/index";
+        String flag = "mobile/index/index";
         Date date = new Date();
         model.addAttribute("date",date );
         return flag;
@@ -41,7 +41,7 @@ public class IndexAction {
      */
     @RequestMapping(value="/login",method = RequestMethod.POST)
      public String login(@RequestParam String useremail,@RequestParam String pwd,Model model) {
-        String flag = "index/index";
+        String flag = "pc/index/index";
         LOG.info("email "+useremail);
         LOG.info("pwd "+pwd);
         if(!"whtoo@qq.com".equals(useremail)){
@@ -51,7 +51,7 @@ public class IndexAction {
      }
      @RequestMapping(value="/register",method = RequestMethod.GET)
      public String register(){
-          String flag = "login/register";
+          String flag = "pc/login/register";
           
           return flag;
      }
